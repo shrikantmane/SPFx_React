@@ -21,7 +21,8 @@ export default class SpFxReactWebPart extends BaseClientSideWebPart<ISpFxReactWe
     const element: React.ReactElement<ISpFxReactProps > = React.createElement(
       SpFxReact,
       {
-        description: this.properties.description
+        description: this.properties.description,
+        httpClient: this.context.httpClient
       }
     );
 
